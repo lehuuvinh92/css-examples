@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    li.css-counter-example1:before{
+        counter-increment: counter1;
+        content: counter(counter1, upper-roman) ".";
+      }
+      li.css-counter-example2:before{
+        counter-increment: counter2;
+        content: counter(counter2, upper-latin) ".";
+      }
+      li.css-counter-example3:before{
+        counter-increment: counter3;
+        content: counter(counter3, lower-alpha) ".";
+      }
+      li{
+        font-size: 18px;
+        margin-bottom: 10px;
+        list-style-type: none;
+      }
+      .counter-container {
+        counter-reset: counter1 counter2 counter3;
+      }
+
+</style>
+</head>
+<body>
+    <div class='counter-container'>
+        <p style="font-size: 20px;font-weight: bold; background-color:green;width: 250px;">Ngôn ngữ web</p>
+        <li class="css-counter-example1">
+            Lập trình CSS
+        </li>
+         <li class="css-counter-example1">
+            Lập trình JavaScript
+        </li>
+        <li class="css-counter-example1">
+            Lập trình HTML
+        </li>
+        <p style="font-size: 20px;font-weight: bold; background-color:green;width: 250px;">Ngôn ngữ lập trình</p>
+        <li class="css-counter-example2">
+            Lập trình PHP
+        </li>
+         <li class="css-counter-example2">
+            Lập trình C#
+        </li>
+        <li class="css-counter-example2">
+            Lập trình Java
+        </li>
+        <p style="font-size: 20px;font-weight: bold; background-color:green;width: 250px;">Các Web Server</p>
+        <li class="css-counter-example3">
+            Apache
+        </li>
+         <li class="css-counter-example3">
+            IIS
+        </li>
+        <li class="css-counter-example3">
+            Nginx
+        </li>
+    </div>
+</body>
+</html>
